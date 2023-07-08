@@ -16,6 +16,7 @@ export default function StartScreen({ navigation }) {
       <Button
         mode="contained"
         onPress={() => navigation.navigate('LoginScreen')}
+        
       >
         Login
       </Button>
