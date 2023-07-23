@@ -3,7 +3,7 @@ import Background from '../components/Background'
 import Logo from '../components/Logo'
 
 import Paragraph from '../components/Paragraph'
-import Button from '../components/Button'
+
 
 import { Button, Text } from 'react-native';
 import { Drawer } from 'react-native-drawer-layout';
