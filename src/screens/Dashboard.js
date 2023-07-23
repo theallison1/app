@@ -4,34 +4,28 @@ import Logo from '../components/Logo'
 
 import Paragraph from '../components/Paragraph'
 import Button from '../components/Button'
-import Header from './Header'
 
+import { Button, Text } from 'react-native';
+import { Drawer } from 'react-native-drawer-layout';
 
 
 export default function Dashboard({ navigation }) {
   return (
     <Background>
        
-      <Header />
-    
-      
-      <Logo />
-    
-      <Paragraph>
-        Your amazing app starts here. Open you favorite code editor and start
-        editing this project.
-      </Paragraph>
+       <Drawer
+      open={open}
+      onOpen={() => setOpen(true)}
+      onClose={() => setOpen(false)}
+      renderDrawerContent={() => {
+        return <Text>Drawer content</Text>;
+      }}
+    >
       <Button
-        mode="outlined"
-        onPress={() =>
-          navigation.reset({
-            index: 0,
-            routes: [{ name: 'StartScreen' }],
-          })
-        }
-      >
-        Logout
-      </Button>
+        onPress={() => setOpen((prevOpen) => !prevOpen)}
+        title={`${open ? 'Close' : 'Open'} drawer`}
+      />
+    </Drawer>
     </Background>
   )
 }
