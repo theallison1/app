@@ -12,6 +12,7 @@
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/native": "^5.9.8",
     "@react-navigation/stack": "^5.12.8",
+    "@styled-icons/material": "^10.47.0",
     "expo-status-bar": "~1.4.2",
     "expo-updates": "^0.15.6",
     "prop-types": "15.5.4",
