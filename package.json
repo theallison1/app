@@ -24,7 +24,8 @@
     "react-native-screens": "~2.15.2",
     "react-native-status-bar-height": "^2.6.0",
     "react-native-web": "~0.13.12",
-    "react-responsive-navbar": "^1.0.11"
+    "react-responsive-navbar": "^1.0.11",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
