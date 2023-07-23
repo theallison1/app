@@ -1,7 +1,6 @@
 import React from "react";
 import ResponsiveMenu from "react-responsive-navbar";
-import { Close } from "styled-icons/material/Close";
-import { Menu } from "styled-icons/material/Menu";
+
 
 export default function(props) {
   return (
@@ -18,7 +17,6 @@ export default function(props) {
           <ResponsiveMenu
             menuOpenButton={
               <div className="menu hamburger-menu menu-btn">
-                <Menu size={32} />
               </div>
             }
             menuCloseButton={
